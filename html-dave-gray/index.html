@@ -29,6 +29,8 @@
                 <li><a href="#things-to-do">things to do</a></li>
                 <li><a href="#things-i-do">my fate</a></li>
                 <li><a href="#gpt-jokes">jokes by gpt</a></li>
+                <li><a href="#mars-facts">facts about mars</a></li>
+                <li><a href="#fun-form">submit your sanity</a></li>
             </ul>
         </nav>
     </header>
@@ -267,6 +269,108 @@
                 </tfoot>     
             </table>
         </article>
+
+        <article id="fun-form">
+            <h2>Submit Your Sanity</h2>
+            <p>Or pretend to, at least.</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Who Are You?</legend>
+                    <p>
+                        <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="text" id="name" name="name" placeholder="Your heroic alias" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="age">Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="number" id="age" name="age" min="0" max="150" placeholder="Optional...ish" autocomplete="on">
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="your secret" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:&nbsp;&nbsp;&nbsp;</label>
+                        <input type="tel" name="phone" id="phone" placeholder="555-555-5555"
+                            pattern="[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Superpower Check</legend>
+                    <p>
+                        <input type="checkbox" id="timeTravel" name="powers" value="timeTravel">
+                        <label for="timeTravel">Time Travel</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="telepathy" name="powers" value="telepathy">
+                        <label for="telepathy">Telepathy</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="invisibility" name="powers" value="invisibility">
+                        <label for="invisibility">Invisibility</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Favorite Coffee</legend>
+                    <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Coffees">
+                                <option value="regular coffee">Regular Coffee</option>
+                                <option value="iced coffee">Iced Coffee</option>
+                            </optgroup>
+                            <optgroup label="Espresso Drinks">
+                                <option value="latte" selected>Latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="americano">Americano</option>
+                            </optgroup>
+                            <option value="other";">Other</option>
+                        </select>
+                    </p>
+                    <!-- <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="coffee">
+                        <option value="latte">
+                        <option value="espresso">
+                        <option value="cortado">
+                        <option value="americano">
+                        <option value="other">
+                    </datalist>
+                </p> -->
+                </fieldset>
+
+                <fieldset>
+                    <legend>Favorite Snack</legend>
+                    <p>
+                        <input type="radio" id="chips" name="snack" value="chips">
+                        <label for="chips">Chips</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="cookies" name="snack" value="cookies">
+                        <label for="cookies">Cookies</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="otherSnack" name="snack" value="other">
+                        <label for="otherSnack">Other</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message to Me</legend>
+                    <textarea name="message" id="message" rows="5" placeholder="Keep it short and funny"></textarea>
+                </fieldset>
+
+                <button type="submit">Send</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset My Life Choices</button>
+            </form>
+        </article>
+
     </main>
 
     <hr>
