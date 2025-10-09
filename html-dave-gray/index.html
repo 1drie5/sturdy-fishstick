@@ -12,121 +12,140 @@
 
 <body>
      <!-- Attempt #69 at learning HTML. -->
-    <h1>Hello World!</h1>
+    <header>
+        <h1>Hello World!</h1>
+
+        <hr>
+
+        <h2>I hope I learn HTML this time.</h2>
+        <p>nah this ain't my first web page...</p>
+    
+        <hr>
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li><a href="#productive-schedule">my stupid schedule</a></li>
+                <li><a href="#mars-visit">wanna go here</a></li>
+                <li><a href="#things-to-do">things to do</a></li>
+                <li><a href="#things-i-do">my fate</a></li>
+                <li><a href="#gpt-jokes">jokes by gpt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr>
+
+    <main>
+        <article id="productive-schedule">
+            <h3>My Totally Productive Daily Schedule</h3>
+            <p>Let me tell you how:
+                <br>&nbsp;&nbsp;&nbsp;...I open VS Code, stare at it, then <strong>question my life choices.</strong>
+                <br>&nbsp;&nbsp;&nbsp;...I "plan my schedule" but end up <em>rearranging my desktop icons instead.</em>
+                <br>&nbsp;&nbsp;&nbsp;...I watch one HTML tutorial and suddenly think I'm a senior dev.
+                <br>&nbsp;&nbsp;&nbsp;...I google every single thing, including "what is HTML?" (again).
+                <br>&nbsp;&nbsp;&nbsp;...I pretend to read <abbr title="Mozilla Developer Network"> <a href="https://developer.mozilla.org/" target="_blank">MDN</a></abbr> docs but actually scroll memes.
+                <br>&nbsp;&nbsp;&nbsp;...I promise to take a 5-minute break... three hours ago.
+            </p>
+    <hr>
+        </article>
+    
+        <article id="mars-visit">
+            <h3>Place I'd Like to Visit</h3>
+            <section>
+                <h3>Acidalia Planitia</h3>
+                <address>
+                    Hab Unit 4B<br>
+                    Acidalia Planitia, Mars<br>
+                    Sol 1, Ares IV Mission<br>
+                </address>
+                <a href="https://solarsystem.nasa.gov/gltf_embed/2372/" target="_blank">Teleport to Mars</a>
+            </section>
+            <section>
+                <!--Adding Images-->
+                <h3>Images from 'The Martian'</h3>
+                <br>
+                <figure>
+                    <figcaption style="font-family: 'Courier New', monospace; font-size: 14px;">Martian</figcaption>
+                    <img src="img/martian1.png" alt="an image from the martian movie" title="Martian" width="300" height="200" loading="lazy">
+                    <blockquote style="font-family: 'Courier New', monospace; font-size: 14px;">
+                        "It's a strange feeling. Everywhere I go, I'm the first. Step outside the rover? First guy ever to be there! Climb a hill? First guy to climb that hill! Kick a rock? That rock hadn't moved in a million years! I'm the first guy to drive long-distance on Mars. The first guy to spend more than thirty-one sols on Mars. The first guy to grow crops on Mars. First, first, first!"
+                    </blockquote>
+                </figure>
+                <br>
+                <figure>
+                    <figcaption style="font-family: 'Courier New', monospace; font-size: 14px;">Mark Watney growing potatoes</figcaption>
+                    <img src="img/martian2.jpg" alt="an image from the martian movie" title="Martian" width="300" height="200" loading="lazy">
+                    <blockquote style="font-family: 'Courier New', monospace; font-size: 14px;">
+                        "They say once you grow crops somewhere, you have officially colonized it. So, technically, I colonized Mars."
+                    </blockquote>
+                </figure>
+
+                <aside>
+                    <details>
+                        <summary>guess the <mark>number of times</mark> I have watched The Martian</summary>
+                        <p>Enough times to think I could survive on Mars... but not enough to survive my deadlines.</p>
+                    </details>
+                </aside>
+            </section>
+
+            
+
+        </article>
+    
+        <article id="things-to-do">
+            <h3>Things I Plan to Do (But Never Will)</h3>
+            <ol>
+                <li>Wake up early.</li>
+                <li>Finish that course I started months ago.</li>
+                <li>Organize my files.</li>
+                <li>Touch grass.</li>
+                <li>Become a responsible adult.</li>
+            </ol>
+        </article>
+    
+        <article id="things-i-do">
+            <h3>Things I Actually End Up Doing</h3>
+            <ul>
+                <li>Scrolling endlessly.</li>
+                <li>Renaming files to "final_v2_real_final."</li>
+                <li>Opening VS Code, then YouTube.</li>
+                <li>Rearranging my desktop icons to feel in control of life.</li>
+                <li>Sleeping like I achieved something huge.</li>
+            </ul>
+        </article>
+    
+        <article id="gpt-jokes">
+            <h3>Jokes by GPT: AI Edition</h3>
+                <dl>
+                <dt><strong>Why did the AI cross the road?</strong></dt>
+                <dd>To <em>optimize</em> its path using reinforcement learning, obviously.</dd>
+                
+                <dt><strong>AI Therapist</strong></dt>
+                <dd>Said: "Tell me about your feelings." I replied: <em>"I have none, but I can generate some."</em></dd>
+                
+                <dt><strong>Neural Network Humor</strong></dt>
+                <dd>It tried to tell a joke, but <strong>overfitted</strong> and everyone was confused.</dd>
+                
+                <dt><strong>ChatGPT Pick-Up Line</strong></dt>
+                <dd>"Are you a dataset? Because I feel a strong correlation with you."</dd>
+                
+                <dt><strong>AI's Dream Job</strong></dt>
+                <dd>Winning a Turing Award while binge-watching human mistakes on YouTube.</dd>
+                
+                <dt><strong>Training a Model</strong></dt>
+                <dd>Me: "Please learn from this data."<br>
+                    AI: <em>"I've already memorized it. Now what?"</em></dd>
+                </dl>
+        </article>
+    </main>
 
     <hr>
 
-    <h2>I hope I learn HTML this time.</h2>
-    <p>nah this ain't my first web page...</p>
+    <footer>
+        <p>&lt;&lt;&lt; &copy; <a href="about.html">iddu</a> &gt;&gt;&gt;</p>
     
-    <hr>
-
-    <nav>
-        <ul>
-            <li><a href="#productive-schedule">my stupid schedule</a></li>
-            <li><a href="#mars-visit">wanna go here</a></li>
-            <li><a href="#things-to-do">things to do</a></li>
-            <li><a href="#things-i-do">my fate</a></li>
-            <li><a href="#gpt-jokes">jokes by gpt</a></li>
-        </ul>
-    </nav>
-
-    <hr>
-
-    <section id="productive-schedule">
-    <h3>My Totally Productive Daily Schedule</h3>
-        <p>Let me tell you how:
-            <br>&nbsp;&nbsp;&nbsp;...I open VS Code, stare at it, then <strong>question my life choices.</strong>
-            <br>&nbsp;&nbsp;&nbsp;...I "plan my schedule" but end up <em>rearranging my desktop icons instead.</em>
-            <br>&nbsp;&nbsp;&nbsp;...I watch one HTML tutorial and suddenly think I'm a senior dev.
-            <br>&nbsp;&nbsp;&nbsp;...I google every single thing, including "what is HTML?" (again).
-            <br>&nbsp;&nbsp;&nbsp;...I pretend to read <abbr title="Mozilla Developer Network"> <a href="https://developer.mozilla.org/" target="_blank">MDN</a></abbr> docs but actually scroll memes.
-            <br>&nbsp;&nbsp;&nbsp;...I promise to take a 5-minute break... three hours ago.
-        </p>
-    <hr>
-    </section>
-    
-    <section id="mars-visit">
-    <h3>Place I'd Like to Visit</h3>
-    <address>
-        Hab Unit 4B<br>
-        Acidalia Planitia, Mars<br>
-        Sol 1, Ares IV Mission<br>
-    </address>
-    <a href="https://solarsystem.nasa.gov/gltf_embed/2372/" target="_blank">Teleport to Mars</a>
-    
-    <!--Adding Images-->
-    <br>
-    <figure>
-        <figcaption style="font-family: 'Courier New', monospace; font-size: 14px;">Martian</figcaption>
-        <img src="img/martian1.png" alt="an image from the martian movie" title="Martian" width="300" height="200" loading="lazy">
-        <blockquote style="font-family: 'Courier New', monospace; font-size: 14px;">
-            "It's a strange feeling. Everywhere I go, I'm the first. Step outside the rover? First guy ever to be there! Climb a hill? First guy to climb that hill! Kick a rock? That rock hadn't moved in a million years! I'm the first guy to drive long-distance on Mars. The first guy to spend more than thirty-one sols on Mars. The first guy to grow crops on Mars. First, first, first!"
-        </blockquote>
-    </figure>
-    <br>
-    <figure>
-        <figcaption style="font-family: 'Courier New', monospace; font-size: 14px;">Mark Watney growing potatoes</figcaption>
-        <img src="img/martian2.jpg" alt="an image from the martian movie" title="Martian" width="300" height="200" loading="lazy">
-        <blockquote style="font-family: 'Courier New', monospace; font-size: 14px;">
-            "They say once you grow crops somewhere, you have officially colonized it. So, technically, I colonized Mars."
-        </blockquote>
-    </figure>
-
-    </section>
-    
-    <section id="things-to-do">
-    <h3>Things I Plan to Do (But Never Will)</h3>
-    <ol>
-        <li>Wake up early.</li>
-        <li>Finish that course I started months ago.</li>
-        <li>Organize my files.</li>
-        <li>Touch grass.</li>
-        <li>Become a responsible adult.</li>
-    </ol>
-    </section>
-    
-    <section id="things-i-do">
-    <h3>Things I Actually End Up Doing</h3>
-    <ul>
-        <li>Scrolling endlessly.</li>
-        <li>Renaming files to "final_v2_real_final."</li>
-        <li>Opening VS Code, then YouTube.</li>
-        <li>Rearranging my desktop icons to feel in control of life.</li>
-        <li>Sleeping like I achieved something huge.</li>
-    </ul>
-    </section>
-    
-    <section id="gpt-jokes">
-    <h3>Jokes by GPT: AI Edition</h3>
-        <dl>
-          <dt><strong>Why did the AI cross the road?</strong></dt>
-          <dd>To <em>optimize</em> its path using reinforcement learning, obviously.</dd>
-        
-          <dt><strong>AI Therapist</strong></dt>
-          <dd>Said: "Tell me about your feelings." I replied: <em>"I have none, but I can generate some."</em></dd>
-        
-          <dt><strong>Neural Network Humor</strong></dt>
-          <dd>It tried to tell a joke, but <strong>overfitted</strong> and everyone was confused.</dd>
-        
-          <dt><strong>ChatGPT Pick-Up Line</strong></dt>
-          <dd>"Are you a dataset? Because I feel a strong correlation with you."</dd>
-        
-          <dt><strong>AI's Dream Job</strong></dt>
-          <dd>Winning a Turing Award while binge-watching human mistakes on YouTube.</dd>
-        
-          <dt><strong>Training a Model</strong></dt>
-          <dd>Me: "Please learn from this data."<br>
-              AI: <em>"I've already memorized it. Now what?"</em></dd>
-        </dl>
-    </section>
-    
-    <hr>
-    
-    &lt;&lt;&lt; &copy; <a href="about.html">iddu</a> &gt;&gt;&gt;
-    
-    <p><a href="#">Back to Top</a></p>
-
+        <p><a href="#">Back to Top</a></p>
+    </footer>
 </body>
 
 </html>
