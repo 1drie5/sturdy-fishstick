@@ -1,8 +1,30 @@
 html {
-    font-size: 22px;
+    font-size: 28px;
 }
 
 body {
-    background-color: #333;
-    color: whitesmoke;
+    background-color: #1e1e2f; /* deep dark blue-purple */
+    color: #f5f5f5; /* soft off-white */
+    font-family: 'Brush Script MT', cursive;;
+}
+
+a {
+    color: #00bfff; /* bright sky blue */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8aa2c1; /* muted blue-gray */
+}
+
+a:hover, a:active {
+    color: #ff69b4; /* playful hot pink */
+}
+
+strong {
+    color: #ffcc00; /* warm gold emphasis */
+}
+
+em {
+    color: #ffa500; /* orange emphasis */
 }
