@@ -96,7 +96,6 @@ table, tr, th, td, caption {
 /* Hover glow effect */
 #fun-form:hover {
     box-shadow: 0 0 25px 5px rgba(248, 83, 1, 0.9);
-    transform: scale(1.03);
 }
 
 /* Headings */
