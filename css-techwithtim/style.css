@@ -1,0 +1,83 @@
+body{
+    background-color: lightgrey;
+    min-height: 100vh; /* Changed from height to min-height */
+    font-family: cursive;
+    margin: 0; /* Added to remove default margin */
+}
+
+.card{
+    background-color: white;
+    margin: 5%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5), -2px -2px 5px rgba(0,0,0,0.5);
+    padding: 10px 15px 10px 15px;
+}
+
+.stat-item{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.stat-item p{
+    font-weight: bold;
+}
+
+.stat-item i{
+    color: red;
+    padding: 10px;
+    background-color: #ff000020;
+    border-radius: 10px;
+}
+
+.stats-container{
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Added - allows items to wrap to next line */
+}
+
+.grey-container{
+    margin: 1em;
+    padding: 1em;
+    background-color: lightgrey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Added - allows wrapping on small screens */
+    gap: 0.5em; /* Added - ensures spacing when wrapped */
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button{
+    background-color: #2e4057;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.button:hover{
+    background-color: #1c2376;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+    .card {
+        margin: 2%; /* Reduced margin on very small screens */
+    }
+    
+    .button {
+        font-size: 18px; /* Slightly smaller font on mobile */
+    }
+}
